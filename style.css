@@ -1,0 +1,14 @@
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+img {
+    margin: 20px auto;
+    height: 90vh;
+}
