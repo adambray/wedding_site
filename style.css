@@ -8,7 +8,7 @@ nav {
     display: flex;
     justify-content: center;
 
-    margin: 2rem;
+    margin: 3rem;
 }
 
 nav a {
@@ -27,11 +27,133 @@ nav a {
     margin: 0 1rem;
 }
 
-@font-face {
-    font-family: "Lulo Clean";
-    font-style: normal;
+header {
+    text-align: center;
+}
+
+section {
+    padding: 0 2rem 0;
+}
+
+section p {
+    font-family: "Century Schoolbook", cursive;
     font-weight: 400;
-    src: local("Lulo Clean One"), local('LuloCleanOne'), url("fonts/LuloCleanOne-Regular.otf") format('opentype');
+    font-style: Italic;
+    font-size: 16px;
+
+    line-height: 1.6;
+    text-transform: none;
+    letter-spacing: normal;
+
+    color: #1f211c;
+
+    width: 80%;
+}
+
+.abstract-header {
+    background-image: url(images/save_the_date_cropped_2.jpeg), none;
+    background-position: center top, left top;
+    background-repeat: no-repeat, repeat;
+    background-size: 800px auto, auto;
+    padding: 50px 0 0 0;
+}
+
+.centered-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-photo {
+    width: 90%;
+}
+
+.bride-and-groom {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bride-and-groom .and {
+    font-family: "Century Schoolbook", cursive;
+    font-weight: 400;
+    font-style: Italic;
+    font-size: 17px;
+
+    line-height: 1.6;
+    text-transform: none;
+    letter-spacing: 4px;
+
+    color: #1f211c;
+}
+
+h1 {
+    font-family: "Lulo Clean", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+
+    line-height: 1.4;
+    text-transform: none;
+    letter-spacing: 5px;
+
+    color: #1f211c;
+
+    margin: 20px auto 10px;
+}
+
+h2 {
+    font-family: "Steelfish", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    color: #1f211c;
+}
+
+.join-us {
+    font-family: "Century Schoolbook", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+
+    line-height: 1.4;
+    text-transform: lowercase;
+    letter-spacing: normal;
+
+    color: #1f211c;
+
+    margin-top: 2rem;
+}
+
+.date {
+    font-family: "Lulo Clean", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+
+    line-height: 1.4;
+    text-transform: lowercase;
+    letter-spacing: 4px;
+
+    color: #1f211c;
+
+    margin-top: 1rem;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.events-container .info {
+    width: 50%;
 }
 
 .divider {
@@ -40,11 +162,104 @@ nav a {
     background-size: auto 50px;
     background-position: center center;
     background-repeat: repeat-x;
+
+    margin: 3rem 0;
 }
 
+.small-divider {
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    background-image: url(images/small-divider.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
-aside {
-    font-family: "Brush Script MT";
-    font-size: 24px;
-    color: rgb(38, 61, 103);
+.plus {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url(https://d3t14gfu9ehll4.cloudfront.net/themes/7e9fedee-caff-46de-8394-e1a6b42df1f0/root_SmallGraphic_Sn3gt0S.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "Lulo Clean";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Lulo Clean One"), local('LuloCleanOne'), url("fonts/LuloCleanOne-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "Century Schoolbook";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Century Schoolbook Italic"), local('CenturySchoolbook-Italic'), url("fonts/CenturySchoolbookItalic-Italic.TTF") format('truetype');
+}
+
+@font-face {
+    font-family: "Steelfish";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Steelfish"), local('Steelfish'), url("fonts/Steelfish-Regular.ttf") format('truetype');
+}
+
+@media (min-width: 544px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .abstract-header {
+        background-size: 1200px auto, auto;
+        padding: 75px 0 0 0;
+    }
+
+    .date {
+        font-size: 22px;
+    }
+
+    .bride-and-groom .and {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .abstract-header {
+        background-size: 1600px auto, auto;
+        padding: 75px 0 0 0;
+    }
+
+    .date {
+        font-size: 25px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .date {
+        font-size: 29px;
+    }
 }
