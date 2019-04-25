@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Diana and Adam's Wedding</title>
+    <script src="map.js"></script>
 </head>
 <body>
 <div class="container">
@@ -25,7 +26,6 @@
         </div>
         <nav>
             <a href="#home">HOME</a>
-            <a href="#rsvp">RSVP</a>
             <a href="#events">EVENTS</a>
             <a href="#travel">TRAVEL</a>
             <a href="#registry">GIFT REGISTRY</a>
@@ -70,52 +70,65 @@
 
         <section>
             <div class="centered-wrapper">
-                <a name="rsvp"></a>
-
-                <h2>
-                    You're Invited
-                </h2>
-                <div class="small-divider"></div>
-
-                <label for="name">
-                    Enter the name on your invitation
-                </label>
-                <input type="text" id="name"/>
-                <button>FIND RSVP</button>
-            </div>
-        </section>
-        <div class="divider"></div>
-
-        <section>
-            <div class="centered-wrapper">
                 <a name="events"></a>
                 <h2>EVENTS</h2>
                 <div class="small-divider"></div>
 
                 <div class="events-container">
                     <div class="info">
-                        <h4>Ceremony & Reception</h4>
+                        <div class="event-item">
 
-                        <p>
-                            6:00 PM, July 13, 2019 <br />
-                            Unconventional Diner <br />
-                            1207 9th St NW, Washington, DC 20001
-                        </p>
+                            <div class="event-heading">
+                                <span class="circle">1</span>
+                                <h3>Ceremony & Reception</h3>
+                            </div>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <p>
+                                6:15 PM, July 13, 2019 <br/>
+                                Unconventional Diner <br/>
+                                1207 9th St NW, Washington, DC 20001
+                            </p>
 
-                        </p>
+                            <p>
+                            </p>
+                        </div>
+                        <div class="event-item">
+
+                            <div class="event-heading">
+                                <span class="circle">2</span>
+                                <h3>After Party</h3>
+                            </div>
+
+                            <p>
+                                11:00 PM, July 13, 2019 <br/>
+                                TBD <br/>
+                            </p>
+
+                            <p>
+                            </p>
+                        </div>
+                        <div class="event-item">
+
+                            <div class="event-heading">
+                                <span class="circle">3</span>
+                                <h3>Brunch</h3>
+                            </div>
+
+                            <p>
+                                10:00 AM – 3:00 PM, July 14, 2019 <br/>
+                                909 Capitol Yards Clubroom<br/>
+                                909 New Jersey Ave SE, Washington, DC 20003
+                            </p>
+
+                            <p>
+                            </p>
+                        </div>
                     </div>
-                    <div class="map">
 
-                    </div>
+                    <div class="map" id="map"></div>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtzjBn1RfTtMDkLWuPqA-1Y1yridEHymA&callback=initMap"
+                            async defer></script>
                 </div>
-
             </div>
         </section>
         <div class="divider"></div>
@@ -135,7 +148,9 @@
                 <a name="registry"></a>
                 <h2>GIFT REGISTRY</h2>
                 <div class="small-divider"></div>
-
+                <h3>Zola</h3>
+                <p></p>
+                <a href="https://www.zola.com/registry/eatbraylove">View Registry</a>
             </div>
         </section>
         <div class="divider"></div>

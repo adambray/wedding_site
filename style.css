@@ -116,6 +116,20 @@ h2 {
     color: #1f211c;
 }
 
+h3 {
+    font-family: "Lulo Clean", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: oblique;
+
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: normal;
+
+    color: #1f211c;
+    margin: 0;
+}
+
 .join-us {
     font-family: "Century Schoolbook", sans-serif;
     font-weight: 400;
@@ -131,6 +145,11 @@ h2 {
     margin-top: 2rem;
 }
 
+#map {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+}
 .date {
     font-family: "Lulo Clean", cursive;
     font-weight: 400;
@@ -154,6 +173,30 @@ h2 {
 
 .events-container .info {
     width: 50%;
+}
+.event-heading {
+    position: relative;
+}
+.circle {
+    display: flex;
+
+    position: absolute;
+    left: -60px;
+    width: 30px;
+    height: 30px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 50%;
+    background-color: #1f211c;
+
+    cursor: pointer;
+
+    color: #fcf1e6;
+    font-family: "Century Schoolbook", serif;
+    font-size: 19.2px;
 }
 
 .divider {
