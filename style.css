@@ -35,7 +35,7 @@ section {
     padding: 0 2rem 0;
 }
 
-section p {
+section p, section ul, section li {
     font-family: "Century Schoolbook", cursive;
     font-weight: 400;
     font-style: Italic;
@@ -48,44 +48,6 @@ section p {
     color: #1f211c;
 
     width: 80%;
-}
-
-.abstract-header {
-    background-image: url(images/save_the_date_cropped_2.jpeg), none;
-    background-position: center top, left top;
-    background-repeat: no-repeat, repeat;
-    background-size: 800px auto, auto;
-    padding: 50px 0 0 0;
-}
-
-.centered-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main-photo {
-    width: 90%;
-}
-
-.bride-and-groom {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bride-and-groom .and {
-    font-family: "Century Schoolbook", cursive;
-    font-weight: 400;
-    font-style: Italic;
-    font-size: 17px;
-
-    line-height: 1.6;
-    text-transform: none;
-    letter-spacing: 4px;
-
-    color: #1f211c;
 }
 
 h1 {
@@ -128,6 +90,44 @@ h3 {
 
     color: #1f211c;
     margin: 0;
+}
+
+.abstract-header {
+    background-image: url(images/save_the_date_cropped_2.jpeg), none;
+    background-position: center top, left top;
+    background-repeat: no-repeat, repeat;
+    background-size: 800px auto, auto;
+    padding: 50px 0 0 0;
+}
+
+.centered-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-photo {
+    width: 90%;
+}
+
+.bride-and-groom {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bride-and-groom .and {
+    font-family: "Century Schoolbook", cursive;
+    font-weight: 400;
+    font-style: Italic;
+    font-size: 17px;
+
+    line-height: 1.6;
+    text-transform: none;
+    letter-spacing: 4px;
+
+    color: #1f211c;
 }
 
 .join-us {
